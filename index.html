@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samad Saifi | Stanford AI Researcher, Ph.D Fellow & Cloud Specialist</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Samad Saifi - Stanford Artificial Intelligence Research Fellow, Ph.D Scholar, Stanford HAI Fellow, NASA Aerospace AI Specialist, and AOSP Contributor. Specializing in ethical AI, safe robotic manipulation, and cloud architectures.">
+    <meta name="keywords" content="Samad Saifi, Stanford AI, PhD Scholar, Stanford HAI, NASA Aerospace, Web3, AWS Educator, AOSP Contributor, Robotic Alignment, Stanford University, Oxford, Arizona State University, Portfolio, Material 3">
+    <meta name="author" content="Samad Saifi">
+    <link rel="canonical" href="https://www.samadsaifi.tech">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.samadsaifi.tech">
+    <meta property="og:title" content="Samad Saifi | Stanford AI Scholar & Research Fellow">
+    <meta property="og:description" content="Explore Samad Saifi's portfolio: Stanford AI & HAI Research, Oxford academic engagements, NASA Aerospace, AOSP contributions, and safe robotic manipulation loops.">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Google Fonts (Material Design Fonts: Outfit and Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Material 3 Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Dynamic Material 3 Expressive Background Particles Canvas -->
+    <canvas id="canvas-particles"></canvas>
+
+    <!-- Custom Material Toast Notification -->
+    <div id="toast-message" class="toast">Copied to clipboard!</div>
+
+    <!-- 1. Material 3 Top Navigation Bar -->
+    <header class="navbar m3-top-app-bar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">S</span>amad <span class="logo-accent">S</span>aifi
+            </a>
+            
+            <div class="nav-metrics">
+                <span class="m3-badge-container">
+                    <span class="m3-badge-dot"></span>
+                    <span>STANFORD AI FELLOW</span>
+                </span>
+                <!-- Sound synth toggle styled as a Material 3 Pill Button -->
+                <button id="btn-sound-toggle" class="sound-toggle m3-pill-btn" aria-label="Toggle retro feedback audio">
+                    <span class="material-icons-outlined sound-icon">volume_mute</span>
+                    <span class="sound-text">AUDIO: OFF</span>
+                </button>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link btn-nav m3-btn-elevated">Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- 1. Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="m3-badge reveal">
+                        <span class="pulse-dot"></span>
+                        <span>Ph.D Scholar @ Stanford University</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal">
+                        Ethical AI.<br>Human Agency.
+                    </h1>
+                    
+                    <p class="hero-description reveal">
+                        Bridging human value systems with compliant physical control loops, decentralized Web3 protocols, and massive-scale cloud architectures.
+                    </p>
+                    
+                    <div class="hero-actions reveal">
+                        <a href="#research" class="m3-btn m3-btn-filled">
+                            <span>Read Research</span>
+                            <span class="material-icons-outlined">arrow_forward</span>
+                        </a>
+                        <a href="#contact" class="m3-btn m3-btn-outlined">Connect</a>
+                    </div>
+                </div>
+
+                <!-- Showcase Profile Glass Card (Expressive M3 Graphic) -->
+                <div class="hero-graphic reveal">
+                    <div class="m3-expressive-card">
+                        <div class="card-glow"></div>
+                        <div class="m3-avatar-area">
+                            <span class="material-icons-outlined avatar-icon">school</span>
+                        </div>
+                        <h2 class="profile-name">Samad Saifi</h2>
+                        <p class="profile-subtitle">Artificial Intelligence Research Fellow</p>
+                        
+                        <div class="profile-chips">
+                            <span class="m3-chip"><span class="material-icons-outlined chip-icon">psychology</span>AI Agent Orchestration</span>
+                            <span class="m3-chip"><span class="material-icons-outlined chip-icon">history_edu</span>Author and Researcher</span>
+                            <span class="m3-chip"><span class="material-icons-outlined chip-icon">cloud</span>AWS / GCP</span>
+                        </div>
+                        
+                        <div class="m3-stats-strip">
+                            <div class="strip-item">
+                                <span class="strip-val">16</span>
+                                <span class="strip-lbl">Roles</span>
+                            </div>
+                            <div class="strip-item">
+                                <span class="strip-val">ASU</span>
+                                <span class="strip-lbl">Oxford</span>
+                            </div>
+                            <div class="strip-item">
+                                <span class="strip-val">NASA</span>
+                                <span class="strip-lbl">AOSP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Explore Profile</span>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="m3-section-tag">Overview</span>
+                    <h2 class="section-title">THE CORE FOCUS</h2>
+                    <p class="section-subtitle">Deep research into ethical machine learning foundations and cooperative decentralized networks.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Material 3 Large Card -->
+                    <div class="about-card m3-large-card reveal">
+                        <h3 class="card-title">Advanced Research & Strategy</h3>
+                        <p class="card-text">
+                            Pursuing a PhD in Artificial Intelligence at Stanford University, my work centers on foundation model architectures, decentralized GPU compute markets, trustless agent coordination, and low-level Linux/AOSP kernel custom builds.
+                        </p>
+                        
+                        <div class="mindset-pillars">
+                            <div class="pillar">
+                                <span class="pillar-icon m3-icon-holder"><span class="material-icons-outlined">psychology</span></span>
+                                <div>
+                                    <h4>Foundation Model Research</h4>
+                                    <p>Analyzing ethical constraints and societal impacts of large language models.</p>
+                                </div>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-icon m3-icon-holder"><span class="material-icons-outlined">hub</span></span>
+                                <div>
+                                    <h4>AI Agent Orchestration</h4>
+                                    <p>Designing cooperative autonomous loops with zero trust variables.</p>
+                                </div>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-icon m3-icon-holder"><span class="material-icons-outlined">token</span></span>
+                                <div>
+                                    <h4>Decentralized Web3 Ledger</h4>
+                                    <p>Integrating Zero-Knowledge Proofs (ZKPs) for private sovereign data ownership.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Area -->
+                    <div class="about-stats reveal">
+                        <div class="stat-box m3-card">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Global Academic Hubs</span>
+                        </div>
+                        <div class="stat-box m3-card">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Profiled Languages</span>
+                        </div>
+                        <div class="stat-box m3-card">
+                            <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years of AOSP Kernel Testing</span>
+                        </div>
+                        <div class="stat-box m3-card">
+                            <span class="stat-number" data-target="16">0</span>
+                            <span class="stat-label">Professional Affiliations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Experience and Education Sections (Material Stepper Timeline) -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="m3-section-tag">Career Tracker</span>
+                    <h2 class="section-title">EXPERIENCE & EDUCATION</h2>
+                    <p class="section-subtitle">A comprehensive chronological timeline of academic fellowships, corporate roles, and open source achievements.</p>
+                </div>
+                
+                <div class="timeline m3-stepper-timeline">
+                    <!-- 1. Stanford Ph.D. AI Scholar -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">school</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Academic Scholar</span>
+                            <h3 class="timeline-role">Stanford University</h3>
+                            <p class="timeline-subtitle">Ph.D Scholar in Artificial Intelligence</p>
+                            <p class="timeline-desc">Specializing in AI safety strategy, compliance frameworks, operational space path planning, and advanced cloud systems orchestration.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Stanford AI Fellow -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">work</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Aug 2025 — Present</span>
+                            <h3 class="timeline-role">Stanford University</h3>
+                            <p class="timeline-subtitle">Artificial Intelligence Research Fellow</p>
+                            <p class="timeline-desc">Conducting research at the intersection of technical innovation and ethical AI. Deploying autonomous agents and leveraging strategic prompt compilation pipelines.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Stanford Institute for HAI -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">biotech</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Sep 2025 — Present</span>
+                            <h3 class="timeline-role">Stanford Institute for HAI</h3>
+                            <p class="timeline-subtitle">Research Fellow</p>
+                            <p class="timeline-desc">Contributing directly to Human-Centered Artificial Intelligence initiatives. Exploring societal impacts of foundation models and designing agentic business workflow systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. University of Oxford -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">school</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Academic Engagement</span>
+                            <h3 class="timeline-role">University of Oxford</h3>
+                            <p class="timeline-subtitle">Computer Science & Advanced AI Strategy</p>
+                            <p class="timeline-desc">Engaged in multi-disciplinary research addressing ethical deployment and global regulation systems for autonomous networks.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Arizona State University -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">insights</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Apr 2024 — Present</span>
+                            <h3 class="timeline-role">Arizona State University</h3>
+                            <p class="timeline-subtitle">Academic Scholar (Advanced AI & Cloud Strategy)</p>
+                            <p class="timeline-desc">Focused on scalable cloud structures, data strategy optimizations, and human-centered aerospace AI models.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. NASA Specialist -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">rocket_launch</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Jan 2022 — Present</span>
+                            <h3 class="timeline-role">NASA</h3>
+                            <p class="timeline-subtitle">Learning and Development Specialist</p>
+                            <p class="timeline-desc">Conducting research on artificial intelligence safety implementations in autonomous flight systems and advanced aerospace controls.</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. Stanford AI & Web3 Lab -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">token</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Feb 2023 — Present</span>
+                            <h3 class="timeline-role">Stanford AI & Web3 Research Lab</h3>
+                            <p class="timeline-subtitle">Research Engineer</p>
+                            <p class="timeline-desc">Designing trustless protocols for decentralized GPU compute markets, peer coordination, and Zero-Knowledge Privacy constraints.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Android AOSP Contributor -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">android</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Aug 2018 — Present</span>
+                            <h3 class="timeline-role">AOSP / Android Open Source</h3>
+                            <p class="timeline-subtitle">Custom ROM Tester & Contributor</p>
+                            <p class="timeline-desc">Testing low-level kernels and system stability for Android distributions (Evolution X, PixelOS). Specialized in bootloaders and device tree optimization.</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. Stanford AI Intern -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">history_edu</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">May 2022 — Oct 2024</span>
+                            <h3 class="timeline-role">Stanford University</h3>
+                            <p class="timeline-subtitle">Artificial Intelligence Intern</p>
+                            <p class="timeline-desc">Conducted research on foundation models in enterprise workflows. Coached in human-in-the-loop strategies and transparency models.</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. Arizona State University Affiliate -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">hub</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Aug 2022 — Present</span>
+                            <h3 class="timeline-role">Arizona State University</h3>
+                            <p class="timeline-subtitle">Academic Resource Affiliate</p>
+                            <p class="timeline-desc">Leveraging advanced digital ecosystems to perform independent engineering research adhering to standard university criteria.</p>
+                        </div>
+                    </div>
+
+                    <!-- 11. AWS Cloud Educator -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">cloud_queue</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Aug 2022 — Present</span>
+                            <h3 class="timeline-role">AWS Educate Community India</h3>
+                            <p class="timeline-subtitle">AWS Educator & Cloud Mentor</p>
+                            <p class="timeline-desc">Mentored students on decentralized virtual labs, serverless compute configurations, IAM security, and automated cloud deployments.</p>
+                        </div>
+                    </div>
+
+                    <!-- 12. Google for Developers -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">code</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Nov 2021 — Present</span>
+                            <h3 class="timeline-role">Google for Developers</h3>
+                            <p class="timeline-subtitle">Associate</p>
+                            <p class="timeline-desc">Supporting knowledge-sharing events. Organizing community developer labs focusing on Google Cloud resources and Vertex AI pipelines.</p>
+                        </div>
+                    </div>
+
+                    <!-- 13. GDG San Francisco -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">groups</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Dec 2022 — Present</span>
+                            <h3 class="timeline-role">GDG San Francisco</h3>
+                            <p class="timeline-subtitle">Academic Member</p>
+                            <p class="timeline-desc">Actively participating in bay area workshops, technical presentations, and hands-on Google ecosystem integrations.</p>
+                        </div>
+                    </div>
+
+                    <!-- 14. AISES Research Judge -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">star_outline</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Sep 2024 — Present</span>
+                            <h3 class="timeline-role">AISES</h3>
+                            <p class="timeline-subtitle">Conference Volunteer & Research Judge</p>
+                            <p class="timeline-desc">Evaluating high-level technical presentations to ensure standard research adherence at prominent academic events.</p>
+                        </div>
+                    </div>
+
+                    <!-- 15. IEEE Computer Society -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">verified</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Aug 2023 — Present</span>
+                            <h3 class="timeline-role">IEEE Computer & Robotics Societies</h3>
+                            <p class="timeline-subtitle">Member</p>
+                            <p class="timeline-desc">Coordinating with technical chapters on ethical AI implementations, robotics, and advanced cloud-native systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- 16. Google Cloud Study Jam -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><span class="material-icons-outlined">cloud_circle</span></div>
+                        <div class="timeline-content m3-card">
+                            <span class="timeline-date m3-chip-date">Sep 2023 — Oct 2023</span>
+                            <h3 class="timeline-role">Google Cloud Community India</h3>
+                            <p class="timeline-subtitle">Study Jam Facilitator</p>
+                            <p class="timeline-desc">Facilitated technical sandbox modules on deploying Generative AI models and configuring cloud database stacks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Research & Publications (Inline PDF Viewer Card) -->
+        <section id="research" class="section research">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="m3-section-tag">Publications</span>
+                    <h2 class="section-title">ACADEMIC RESEARCH & PAPERS</h2>
+                    <p class="section-subtitle">Bridging physical compliance mechanics with human-aligned cognitive AI.</p>
+                </div>
+                
+                <div class="research-box m3-card reveal">
+                    <div class="research-glow"></div>
+                    <div class="research-header">
+                        <div class="research-institutions">Stanford HAI & Khatib Lab Operational Space Methodologies</div>
+                        <h3 class="research-title">Human-Centered Alignment for Safe Robotic Manipulation</h3>
+                        <p class="research-authors">Ph.D Scholar Lead Focus • Samad Saifi</p>
+                    </div>
+                    
+                    <p class="research-teaser">
+                        As robotic systems step out of industrial safety cages and enter hospitals, schools, and homes, a fundamental paradigm shift is required. Safety cannot be treated as a simple software rule—it must be baked into the physics, dynamics, and real-time path planning of the system.
+                    </p>
+
+                    <div class="research-actions-block">
+                        <button class="m3-btn m3-btn-filled btn-expand-research" id="btn-toggle-abstract">
+                            <span>Read Abstract & Viewer</span>
+                            <span class="material-icons-outlined arrow-down">keyboard_arrow_down</span>
+                        </button>
+                        <a href="Human_Centered_Robotic_Alignment_Paper.pdf" download class="m3-btn m3-btn-outlined">
+                            <span>Download Full PDF</span>
+                            <span class="material-icons-outlined">download</span>
+                        </a>
+                    </div>
+
+                    <!-- Expandable Abstract Container -->
+                    <div class="research-abstract-container" id="abstract-drawer">
+                        <div class="abstract-content">
+                            <h4>Paper Abstract</h4>
+                            <p>
+                                This paper explores the physical and cognitive integration between humans and robotic manipulators. Drawing from Stanford's Institute for Human-Centered AI (HAI) principles and Oussama Khatib's landmark Operational Space Formulation, we outline a compliant control matrix. 
+                                By incorporating <strong>compliance over rigidity</strong>, implementing lightweight <strong>macro-mini actuation structures</strong>, and executing dynamic <strong>elastic strip path deforming algorithms</strong>, we build physical safety into the lowest mathematical loops of robotic systems.
+                            </p>
+
+                            <!-- Interactive Inline PDF Viewer (Material 3 Card style) -->
+                            <div class="pdf-viewer-terminal m3-card">
+                                <div class="m3-card-header-bar">
+                                    <span class="material-icons-outlined header-bar-icon">picture_as_pdf</span>
+                                    <span class="header-bar-text">Academic Viewer // Human_Centered_Robotic_Alignment_Paper.pdf</span>
+                                </div>
+                                <div class="pdf-frame-wrapper">
+                                    <iframe src="Human_Centered_Robotic_Alignment_Paper.pdf" class="pdf-iframe" title="Samad Saifi Research Paper PDF Viewer"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Showcase -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="m3-section-tag">Engineering Showcase</span>
+                    <h2 class="section-title">FEATURED PROJECTS</h2>
+                    <p class="section-subtitle">Full-stack applications, automated configurations, and custom tools.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: YouTube Downloader -->
+                    <div class="project-card m3-card reveal">
+                        <div class="project-visual">
+                            <div class="project-mesh"></div>
+                            <div class="project-overlay">
+                                <span class="tag-featured m3-badge-container">Material 3 App</span>
+                            </div>
+                            <span class="project-icon">📥</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-name">YouTube Downloader</h3>
+                            <p class="project-desc">A full-stack media extraction tool featuring a polished Material Design 3 user interface. Offers custom format resolving, real-time quality selection, and a clean responsive client.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Material 3</span>
+                                <span class="tech-tag">Vite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/samadsaifi/youtube-downloader" target="_blank" class="project-link-btn m3-btn-text">
+                                    <span>git clone repository</span>
+                                    <span class="material-icons-outlined">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AWS Student Labs Facilitator Portal -->
+                    <div class="project-card m3-card reveal">
+                        <div class="project-visual">
+                            <div class="project-mesh cloud"></div>
+                            <div class="project-overlay">
+                                <span class="tag-featured m3-badge-container">Cloud Stack</span>
+                            </div>
+                            <span class="project-icon">☁️</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-name">AWS Cloud-Sandbox Platform</h3>
+                            <p class="project-desc">Designed automated CloudFormation server stacks for student virtual classrooms, implementing secure IAM role delegation, autoscaling triggers, and budget cap constraints.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS IAM</span>
+                                <span class="tech-tag">CloudFormation</span>
+                                <span class="tech-tag">EC2/S3</span>
+                                <span class="tech-tag">Shell Script</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link-btn disabled m3-btn-text">
+                                    <span>Enterprise deployment</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="m3-section-tag">Reach Out</span>
+                    <h2 class="section-title">CONNECT WITH ME</h2>
+                    <p class="section-subtitle">Let's discuss academic research, cloud architecture workshops, or technical evangelism.</p>
+                </div>
+                
+                <div class="contact-layout">
+                    <!-- Quick Actions / Cards -->
+                    <div class="contact-sidebar reveal">
+                        <!-- Direct Email Card -->
+                        <div class="contact-card email-card m3-card">
+                            <span class="card-icon m3-icon-holder"><span class="material-icons-outlined">email</span></span>
+                            <h4>Direct Email</h4>
+                            <p class="email-address">iamsamadsaifi09@gmail.com</p>
+                            <button class="m3-btn m3-btn-filled btn-sm" id="btn-copy-email">Copy Address</button>
+                        </div>
+                        
+                        <!-- Topmate Card -->
+                        <a href="https://topmate.io/samadsaifi" target="_blank" class="contact-card link-card m3-card">
+                            <span class="card-icon m3-icon-holder"><span class="material-icons-outlined">rocket</span></span>
+                            <h4>Topmate 1:1 Mentorship</h4>
+                            <p>Schedule a detailed interactive call with me on cloud computing or computer engineering.</p>
+                        </a>
+                    </div>
+                    
+                    <!-- Network Grid -->
+                    <div class="contact-networks m3-card reveal">
+                        <h3 class="networks-title">Digital Touchpoints</h3>
+                        <div class="networks-grid">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/samadsaifi09" target="_blank" class="network-item m3-card">
+                                <div class="network-logo linkedin">IN</div>
+                                <span>LinkedIn</span>
+                            </a>
+                            <!-- Peerlist -->
+                            <a href="https://peerlist.io/samadsaifi09" target="_blank" class="network-item m3-card">
+                                <div class="network-logo peerlist">P</div>
+                                <span>Peerlist</span>
+                            </a>
+                            <!-- ResearchGate -->
+                            <a href="https://www.researchgate.net/profile/Samad-Saifi-2" target="_blank" class="network-item m3-card">
+                                <div class="network-logo rg">RG</div>
+                                <span>ResearchGate</span>
+                            </a>
+                            <!-- GitHub -->
+                            <a href="https://github.com/samadsaifi" target="_blank" class="network-item m3-card">
+                                <div class="network-logo github">GH</div>
+                                <span>GitHub</span>
+                            </a>
+                            <!-- Twitter / X -->
+                            <a href="https://x.com/samadsaifi" target="_blank" class="network-item m3-card">
+                                <div class="network-logo twitter">X</div>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Samad Saifi. All academic and technical assets reserved.</p>
+                <div class="footer-meta">
+                    <span>Domain: www.samadsaifi.tech [OS: Ubuntu Core LTS]</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
